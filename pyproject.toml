@@ -8,6 +8,7 @@ dependencies = [
     "django>=6.0.6",
     "django-cors-headers>=4.9.0",
     "djangorestframework>=3.17.1",
+    "gunicorn>=26.0.0",
     "mysqlclient>=2.2.8",
     "psycopg[binary]>=3.3.4",
     "pyjwt>=2.13.0",
