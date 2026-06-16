@@ -19,6 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/workspaces/<uuid:workspace_id>/clients/', include('apps.clients.urls')),
+    path('workspaces/<uuid:workspace_id>/clients/', include('apps.clients.urls')),
 ]
 
