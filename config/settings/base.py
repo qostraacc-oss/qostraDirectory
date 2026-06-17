@@ -148,5 +148,14 @@ AUTH_USER_MODEL = 'accounts.User'
 # --- CORS Configuration ---
 CORS_ALLOW_ALL_ORIGINS = True
 
+# --- Cache Configuration ---
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'qostra-directory-cache',
+    }
+}
+
+
 
 
