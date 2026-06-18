@@ -9,6 +9,7 @@ from apps.clients.models import Client
 
 User = get_user_model()
 
+
 class ClientAPITests(APITestCase):
     def setUp(self):
         self.workspace_id = uuid.uuid4()
@@ -85,5 +86,6 @@ class ClientAPITests(APITestCase):
         client_obj = Client.objects.get(id=client_id)
         self.assertFalse(client_obj.is_active)
         
+        # Verify it does not appear in active client lists
         response_list_after = self.client.get(url_list)
         self.assertEqual(len(response_list_after.data), 0)
