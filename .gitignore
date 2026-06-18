@@ -109,3 +109,8 @@ ENV/
 
 # OS-specific files
 Thumbs.db
+
+# Cache directories
+.ruff_cache/
+.pytest_cache/
+
