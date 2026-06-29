@@ -151,6 +151,8 @@ AUTH_USER_MODEL = 'accounts.User'
 
 # --- CORS Configuration ---
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+
 
 # --- Cache Configuration ---
 CACHES = {
